@@ -1,0 +1,4 @@
+CREATE DATABASE wordpress;
+CREATE USER 'harou'@'localhost' IDENTIFIED BY 'abc123';
+GRANT ALL ON wordpress.* TO 'harou'@'localhost' IDENTIFIED BY 'abc123' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
